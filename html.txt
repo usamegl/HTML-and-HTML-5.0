@@ -1,0 +1,315 @@
+<!DOCTYPE html> #hangi html sürümüyle kodlama yaptığımızı belirtiyor
+
+<html>
+#tüm etiketleri kapsayan etikettir.
+<html lang="tr"> 
+#lang benim sayfam türkçe olacak anlamına gelir
+
+<head> #kullanıcıların görmeyeceği şeyleri head kısmında yazıyoruz
+
+<title> başlık demek 
+
+<title>  başlık ismi  </title>
+
+<div> </div> etiketi bir satırı kaplarken  (block) genişliği yüzde yüz ise 
+
+div etiketi genel olarak kapsayıcı bir etikettir
+
+<span> </span> etiketi aynı satırdan devam edebilir.Alt satıra inmez (inline)
+
+satır içi değer girildiğinde kullanılır genellikle
+
+html de yorum satırı olusturmak icin
+
+<!-
+
+-->
+
+paragraf etiketi
+<p></p> 
+
+
+başlık etiketleri
+    <h1>Başlık </h1>
+    <h2> Başlık</h2>
+    <h3> Başlık</h3>
+    <h4> Başlık</h4>
+    <h5>Başlık </h5>
+    <h6>Başlık </h6>
+
+önem sıralaması h1 den h6 ya dogru gidiyor
+
+h1 en büyük h6 en kücük yazımız kalın geliyor standart
+
+<b> </b> etiketi yazıyı kalınlastırır sadece 
+<strong> </strong> önemli seylerde kullanılır yazıyı vurgulamak icin
+<i> </i> eğik yapar yazıyı sadece bunun icin kullanılır (italic)
+<em> </em> eğik yapar ama vurgu yapmak icin kullanılır
+<mark> </mark> Etiketi yazıya vurgu yapılır 
+<small> </small> yazıyı küçük yazmak icin kullanılır.
+<s> </s>  yazının dogru olmadıgını vurgular.
+<del> </del> YAZININ SİLİMİNİ BELİRTMEK İCİN
+<ins> </ins> SİLENEN DEGER YERİNE GELMESİ İCİN
+<u> </u> yanlıs yazılan metinleri belirlemek icin kullanılır. 
+yazı aşağıda kalmasını istiyorsan
+<sub> </sub> 
+yazının yukarıda kalmasını istiyorsak(üs)
+<sup> </sup>
+<br> etiketi bir alt satıra indirir.
+
+ALINTILAMA ETİKETLERİ
+<abbr title="World Wide Web Consortium">W3C </abbr> kısaltma etiketi
+<q></q> alıntı yapar basina ve sonuna " koyar.
+<blockquote> </blockquote> büyük seyleri alıntılamak icin kullanılır.
+link alıntısı için
+<blockquote cite="https://www.google.com">
+<cite> </cite> çalışmanın başlığını kullanmak icin kullanılır.
+
+
+LİNK ETİKETLERİ
+ <a href="https://www.google.com/"> buraya tıklayın </a> 
+<a href="https://www.google.com/" target="_blank">  target nasıl açılacağını belirler(yeni sekmede açar blank)
+ <a href="test.png" >resmi acmak icin tıklayın> </a>
+  <a href="test.png download " >resmi indirmek icin tıklayın> </a>
+
+<p>
+        <a href="#ders1"> HTML DERSLERİ1</a>
+        <a href="#"> HTML DERSLERİ2</a>
+        <a href="#"> HTML DERSLERİ3</a>
+        <a href="#"> HTML DERSLERİ4</a>
+        <a href="#"> HTML DERSLERİ5</a>
+        <a href="#"> HTML DERSLERİ6</a>
+
+     </p>
+
+     <div id="ders1">
+         test yazı <br>
+         test yazı <br> 
+         test yazı <br> 
+         test yazı <br> 
+         test yazı <br> 
+         test yazı <br> 
+         test yazı <br> 
+
+ders 1 etiketine bastığımızda test yazıları çıkıyor.
+
+ <a rel="nofollow" href="https://www.google.com/" target="_blank"> buraya tıklayın </a> 
+
+eğer rel yazmaz isek bu bağlantıya kefil olduğumuz anlamına gelir
+
+
+RESİM ETİKETLERİ
+ <img src="a.png.jpg" width="500" height="200" title="Üsame Gül" >
+img etiketi ile resim kullanırız src de yolu demektir
+<img src="a.png.jpgg" alt="Bu fotoğrafın yolu yanlış">
+
+alt etiketi fotoğraf yanlıs yol verilmişse görüntülememek icin vardır.
+
+srcset  - ekranımıza en uygun çözünürlüklü linki açar.
+
+
+TABLO ETİKETLERİ
+<table> 
+<tr> </tr> satırları oluşturur.
+<td> </td> sütunları oluşturur.
+<thead> </thead>
+<tbody> </tbody>
+<tfoot> </tfoot> yazarsak sutunlar birlesmez
+birlestirmek icin colspan=2 yazıyoruz.
+ <tfoot>
+          <tr>
+              <td colspan="2">
+               Toplam:4500tl
+              </td>
+          </tr>                  
+ </tfoot>
+
+<rowspan> ile de satır birleştiriliyor 
+<caption> aylık maaşım </caption> tablo başlığı
+
+
+LİSTE ETİKETLERİ
+tanım listesi 
+1-unordered etiket (sırasız)
+madde belirtmek icin
+her maddeyi li etiketi ile tanımlıyoruz.
+    <ul>
+        <li>sabah 6 da uyan</li>
+        <li>kahve ic</li>
+        <li>kahvaltı yap</li>
+        <li>okula git </li>
+    </ul>
+
+2-sıralı olması icin a dan z ye (ordered)
+  <ol>
+        <li>editörü kur</li>
+        <li>.html uzantılı dosya olustur.</li>
+        <li>ilk html kodlarını yaz</li>
+    </ol>
+
+3-
+     <dl>
+        <dt> Youtube  </dt>
+        <dd> video paylaşım platformu</dd>
+        <dt>Twitter </dt>
+        <dd>140 karakterde sınırlı mikro blog sitesi</dd>
+    </dl>
+
+hepsinin de type'i var.
+
+MEDYA ETİKETLERİ
+<audio controls>
+        <source src="Adam Lambert - Runnin.mp3" type="audio/mpeg">
+ </audio>
+
+bir şarkıyı ya da sesi açmak, dinletmek için.
+<audio controls loop> dersek hep çalar
+<audio controls loop muted> 
+
+video için
+
+  <video controls>
+        <source src="file_example_MP4_640_3MG.mp4" type="video/mp4">
+    </video>
+tek farkı
+
+<video poster="paranormal.gif" controls>
+
+resim e bastıktan sonra video açılır.
+paranormal.gif basılan resimdir.
+videolara alt yazı ekleyebiliriz.
+ <track src="subtitle-en.vtt" kind="subtitles" srclang="en" label="İngilizce">
+gibi gibi seçenekler var.
+
+İframe etiketi 
+istediğimiz web sayfasında kendi sayfamızı belli bölgede gösterebiliriz.
+ <iframe src="https://www.erbilen.net/"></iframe>
+width ve height verebiliriz 
+  <iframe name="iframeAdi" src="https://www.erbilen.net/"></iframe>
+yukarıdakinde js calısır ama
+<iframe name="iframeAdi" src="https://www.erbilen.net/" sandbox></iframe>
+sandbox dersek js calismadan gelir
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/TPtSH1XOWYM"></iframe>
+
+
+
+FORM ETİKETLERİ
+girdi
+<form action="" method="GET" enctype="multipart/form-data">
+        <label for="kadi">Kullanıcı Adı</label>
+        <input  id="kadi"value="usamegl" type="text"> <br>
+        <input readonly  id="kadi"value="usamegl" type="text"> <br>
+        readonly dersek okunur ama değiştirilemez.
+        <input required id="kadi"value="usamegl" type="text"> <br>
+        required dersek orası dolmadan form atılamaz.
+        <input required maxlength="6" id="kadi"value="usamegl" type="text"> <br>
+        maxlength ne kadar olacağını belirtir max , min de minimum
+       <input placeholder="Kullanıcı adını yazınız." id="kadi" type="text"> <br>
+        placeholder orası boş ise onu yazar. "Kullanıcı adını yazınız."
+        <input type="text"> 
+        <input type="password">
+        <input type="file">
+        <label> <br>
+            <input type="checkbox"> Kuralları kabul ediyorum.
+        </label> <br>
+        <label>
+            <input type="checkbox" checked> Kuralları kabul ediyorum 2.
+        </label> <br>
+
+        <label>
+            <input type="radio" name="cinsiyet" value="erkek">erkek
+           
+        </label>
+
+        <label>
+            <input type="radio" name="cinsiyet" value="kadın">kadın
+           
+        </label>
+        
+        <input type="color">
+        <input type="datetime">
+        <input type="email">
+        <input type="submit" value="Gönder">
+        <input type="hidden" name="test" value="test">
+        <input type="reset"  value="Sıfırla">
+        <input type="range" min="0" max="20" step="5">
+        <input type="search">
+        <input type="tel">
+        <input type="url">   
+        <input type="search" autofocus> dersek direkt sayfayı açtığımızda search a girer 
+        sadece belli başlı dosyaları seçmesi için.
+        <input id="dosya" type="file" accept="image/*"> tüm resimleri seçebiliriz.
+        <input id="dosya" type="file" multiple accept="image/*">
+        dersek birden fazla dosya seçeriz.
+        <input type="text" name="kadi" autocomplete="off">  
+        önceden yazdığımız şeyleri almıyor.
+
+        datalist tanımlayarak seçeneklerden html css js seçmemizi sağlar.
+
+         <input list="diller" name="diller" >
+        <datalist id="diller">
+            <option value="HTML">
+                <option value="CSS">
+                    <option value="JavaScript">
+
+ve not:
+inputları alabilmek icin name yazmayı unutmayın.
+
+        form dışında olan bir elemanı form icinde göstermek icinde 
+        <form action="" method="GET" id="form1">
+         <input list="diller" name="diller" form="form1">
+
+                
+
+
+    </form>
+
+    form etiketlerini sınıflandırmak icin
+
+    <fieldset> 
+            <legend>Giriş yap</legend>
+        <label for="kadi">Kullanıcı Adı</label>
+        <input placeholder="Kullanıcı adını yazınız." id="kadi" type="text"> <br>
+        <input maxlength="6" id="kadi" value="usamegl" type="text"> <br>
+        <input type="text">
+        <input type="password">
+        <button type="submit">Giriş yap</button>
+  
+işlemleri okeylemek icin button ve submit kullanılabilir.
+bu multipart file olarak input verdiğimiz için
+
+<textarea name="" cols="30" rows="10"></textarea> 
+birden fazla satırda bilgi almak istersek textarea 
+
+
+<select name="dil">
+            <option value="CSS">CSS</option>
+            <option value="HTML">HTML</option>
+            <option value="JavaScript">JavaScript</option>
+
+            <select name="dil[]" multiple>
+                <optgroup label="Front-End Dilleri ">
+                    <option value="CSS">CSS</option>
+                    <option value="HTML">HTML</option>
+                    <option value="JavaScript">JavaScript</option>
+
+                </optgroup>
+
+optionları gruplamak icin <optgroup> 
+select etiketi seçenekleri göstermek icin opsiyonları değerlendirmek icindir.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
